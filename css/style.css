@@ -8,7 +8,9 @@ body {
   margin: 0;
 }
 header, footer {
-  background-color: #C77DFF;
+  background: #CC95C0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
 /*  min-width: 500px; */
 }
@@ -45,7 +47,7 @@ h2 {
   font-weight: 600;
   letter-spacing: 0.3px;
   text-align: left;
-  color: #9BB1FF;
+  color: #7AA1D2;
   padding: 10px 0px 10px 10px;
 }
 
@@ -144,8 +146,14 @@ img {
   margin: auto;
 }
 
-footer {
-  margin-top: 44px;
+footer div {
+  height: 100%;
+ font-family: 'Raleway', sans-serif;
+ font-size: 14px;
+ display: flex;
+ align-content: center;
+ padding: 10px 20px;
+ color: rgba(255, 255, 255, 0.5);
 }
 
 @media all and (max-width:700px) {
@@ -155,5 +163,5 @@ footer {
 }
 
 a{
-  color: #E500A4;
+  color: #CC95C0;
 }
